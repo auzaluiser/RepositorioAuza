@@ -1,1 +1,14 @@
-<p>cardbuscador works!</p>
+<h1>Buscando: <small>{{termino}}</small></h1>
+<hr>
+
+<div class="fadeIn fast" *ngIf="productos.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert" >
+            No existen resultados con el término: {{termino}}
+        </div>
+    </div>
+</div>
+
+<div class="card-columns">
+    <app-cardproducto-tarjeta [producto]="foo" [index]="foo.idx" *ngFor="let foo of productos"></app-cardproducto-tarjeta>
+</div>

@@ -1,0 +1,29 @@
+=====================================================
+||       Pasos generales para un sistema base      ||
+=====================================================
+1. colocamos el código para generar el proyecto:
+	ng new nombre app
+2. agregar las librerias que se van a utilizar
+	Bootstrap se agrega en el archivo index
+3. crear la estuctura de las carpetas:
+	models, pages, services, components
+4. agregar los componentes
+	navbar, footer, ect
+5. configurar el archivo rooter
+6. configurar el archivo "app.component.html"
+	<app-navbar></app-navbar>
+	<router-outlet></router-outlet>
+    <app-footer></app-footer>
+
+==========================================================
+||      Pasos generales para el sistema de ejemplo      ||
+==========================================================
+
+1. generamos los componentes propios del sistema
+    ejemplo: cardProducto, cardProductos, cardProduct-tarjeta, cardBuscarProducto
+2. creamos los modelos
+    ejemplo: producto.models.ts
+3. creamos el servicio
+    3.1creamos una clase de servicio con su constructor
+    ejemplo: productos.service.ts
+    comando: ng g s /sercies/almacen.ts // alternativa
